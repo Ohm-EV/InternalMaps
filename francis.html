@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e68a27b906f9303b3a903332b307461c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e68a27b906f9303b3a903332b307461c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e68a27b906f9303b3a903332b307461c = L.map(
+                "map_e68a27b906f9303b3a903332b307461c",
+                {
+                    center: [34.10612400666667, -104.93780634666663],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_053b2e389b6ea743cfbd356785336bca = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_053b2e389b6ea743cfbd356785336bca.addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var marker_a20e53c3fd794e391f6f3d5fe1ce5199 = L.marker(
+                [33.331751, -105.676584],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_02b0f441ebe54c9ae4c19cdce629016d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a20e53c3fd794e391f6f3d5fe1ce5199.setIcon(icon_02b0f441ebe54c9ae4c19cdce629016d);
+        
+    
+        var popup_d478aca52ee7232dc0a4d58b04645c92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_927b9aba3a618debd94a57eb50a82951 = $(`<div id="html_927b9aba3a618debd94a57eb50a82951" style="width: 100.0%; height: 100.0%;">Hotel Ruidoso</div>`)[0];
+                popup_d478aca52ee7232dc0a4d58b04645c92.setContent(html_927b9aba3a618debd94a57eb50a82951);
+            
+        
+
+        marker_a20e53c3fd794e391f6f3d5fe1ce5199.bindPopup(popup_d478aca52ee7232dc0a4d58b04645c92)
+        ;
+
+        
+    
+    
+            var marker_1fa6443745f000178c5bf768ce763104 = L.marker(
+                [33.331751, -105.676584],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_b137ca2a4b17ca050ab3ebfaeedbe98c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1fa6443745f000178c5bf768ce763104.setIcon(icon_b137ca2a4b17ca050ab3ebfaeedbe98c);
+        
+    
+        var popup_968555330771d74663a31c635a7bef73 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e24f46b95053fb15ff6ba6593dbf30b8 = $(`<div id="html_e24f46b95053fb15ff6ba6593dbf30b8" style="width: 100.0%; height: 100.0%;">Hotel Ruidoso</div>`)[0];
+                popup_968555330771d74663a31c635a7bef73.setContent(html_e24f46b95053fb15ff6ba6593dbf30b8);
+            
+        
+
+        marker_1fa6443745f000178c5bf768ce763104.bindPopup(popup_968555330771d74663a31c635a7bef73)
+        ;
+
+        
+    
+    
+            var marker_88dbba1b5f3e7eeecce0aa473a0e002c = L.marker(
+                [36.017119, -106.96176],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_79dfbe6178c977bd1027ae6d66da28a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_88dbba1b5f3e7eeecce0aa473a0e002c.setIcon(icon_79dfbe6178c977bd1027ae6d66da28a2);
+        
+    
+        var popup_f8045ca5a5174f0718269ea69177d608 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_542ddc9f7157b31aae3ea6ebc78df23b = $(`<div id="html_542ddc9f7157b31aae3ea6ebc78df23b" style="width: 100.0%; height: 100.0%;">Mel's Drive Thru Chicken and BBQ</div>`)[0];
+                popup_f8045ca5a5174f0718269ea69177d608.setContent(html_542ddc9f7157b31aae3ea6ebc78df23b);
+            
+        
+
+        marker_88dbba1b5f3e7eeecce0aa473a0e002c.bindPopup(popup_f8045ca5a5174f0718269ea69177d608)
+        ;
+
+        
+    
+    
+            var marker_0ba25fdb5dc97374d9b40d32a9e50817 = L.marker(
+                [36.017119, -106.96176],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_f3d922658062b665bb707d883a54c04c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0ba25fdb5dc97374d9b40d32a9e50817.setIcon(icon_f3d922658062b665bb707d883a54c04c);
+        
+    
+        var popup_16696a344237d3e899cbac7214c92d84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87fa2b6673618938d4815d5565877858 = $(`<div id="html_87fa2b6673618938d4815d5565877858" style="width: 100.0%; height: 100.0%;">Mel's Drive Thru Chicken and BBQ</div>`)[0];
+                popup_16696a344237d3e899cbac7214c92d84.setContent(html_87fa2b6673618938d4815d5565877858);
+            
+        
+
+        marker_0ba25fdb5dc97374d9b40d32a9e50817.bindPopup(popup_16696a344237d3e899cbac7214c92d84)
+        ;
+
+        
+    
+    
+            var marker_9c63cbe1720fb9ae521bfe3574a203d7 = L.marker(
+                [32.435247, -104.244054],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_9a32d829d49c2bc1bd5b8705ee4c7968 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9c63cbe1720fb9ae521bfe3574a203d7.setIcon(icon_9a32d829d49c2bc1bd5b8705ee4c7968);
+        
+    
+        var popup_d2c19a5189b2d3cbf771d914328362a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3495775e4681faf7126828fb1c15afba = $(`<div id="html_3495775e4681faf7126828fb1c15afba" style="width: 100.0%; height: 100.0%;">Arby's - Carlsbad</div>`)[0];
+                popup_d2c19a5189b2d3cbf771d914328362a6.setContent(html_3495775e4681faf7126828fb1c15afba);
+            
+        
+
+        marker_9c63cbe1720fb9ae521bfe3574a203d7.bindPopup(popup_d2c19a5189b2d3cbf771d914328362a6)
+        ;
+
+        
+    
+    
+            var marker_bbb8181080012280079e2f29071333c3 = L.marker(
+                [32.435247, -104.244054],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_bc42cce7a5d162446579ec3f54c97d42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bbb8181080012280079e2f29071333c3.setIcon(icon_bc42cce7a5d162446579ec3f54c97d42);
+        
+    
+        var popup_e5b30187d6979f1b66e8e66451e1fbf8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88f6547f6b8e1e574dafd38339c8504e = $(`<div id="html_88f6547f6b8e1e574dafd38339c8504e" style="width: 100.0%; height: 100.0%;">Arby's - Carlsbad</div>`)[0];
+                popup_e5b30187d6979f1b66e8e66451e1fbf8.setContent(html_88f6547f6b8e1e574dafd38339c8504e);
+            
+        
+
+        marker_bbb8181080012280079e2f29071333c3.bindPopup(popup_e5b30187d6979f1b66e8e66451e1fbf8)
+        ;
+
+        
+    
+    
+            var marker_dd70123257508e7fd4db681bcf4dfde6 = L.marker(
+                [36.753905, -103.821693],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_710b6cfd04ab91f39985fbd40ed09216 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dd70123257508e7fd4db681bcf4dfde6.setIcon(icon_710b6cfd04ab91f39985fbd40ed09216);
+        
+    
+        var popup_37fd58c2ab74621617dce74cb3a46050 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1107fabf1767db119699bf77fa16930 = $(`<div id="html_c1107fabf1767db119699bf77fa16930" style="width: 100.0%; height: 100.0%;">Sierra Grande Travel Center Des Moines</div>`)[0];
+                popup_37fd58c2ab74621617dce74cb3a46050.setContent(html_c1107fabf1767db119699bf77fa16930);
+            
+        
+
+        marker_dd70123257508e7fd4db681bcf4dfde6.bindPopup(popup_37fd58c2ab74621617dce74cb3a46050)
+        ;
+
+        
+    
+    
+            var marker_6c2d59332fed646457c2431eb71cbcb6 = L.marker(
+                [36.753905, -103.821693],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_451c1ea255d1a038f49a9c77dfce9d0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6c2d59332fed646457c2431eb71cbcb6.setIcon(icon_451c1ea255d1a038f49a9c77dfce9d0c);
+        
+    
+        var popup_ed595bf376acc6551a9d01dd4fb6b083 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cbc09c3bed9488703988558dfb0069cb = $(`<div id="html_cbc09c3bed9488703988558dfb0069cb" style="width: 100.0%; height: 100.0%;">Sierra Grande Travel Center Des Moines</div>`)[0];
+                popup_ed595bf376acc6551a9d01dd4fb6b083.setContent(html_cbc09c3bed9488703988558dfb0069cb);
+            
+        
+
+        marker_6c2d59332fed646457c2431eb71cbcb6.bindPopup(popup_ed595bf376acc6551a9d01dd4fb6b083)
+        ;
+
+        
+    
+    
+            var marker_96b6a422ab7fc5d94091d40aa717aedd = L.marker(
+                [35.109489, -103.331729],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_712499e922a3745c3202f5764fee1086 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_96b6a422ab7fc5d94091d40aa717aedd.setIcon(icon_712499e922a3745c3202f5764fee1086);
+        
+    
+        var popup_1c0d2134ac593ae3efa7cf15ed29c58e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c4b6b0262b57b5880646fef66afe88d3 = $(`<div id="html_c4b6b0262b57b5880646fef66afe88d3" style="width: 100.0%; height: 100.0%;">Chisum Travel Center San Jon</div>`)[0];
+                popup_1c0d2134ac593ae3efa7cf15ed29c58e.setContent(html_c4b6b0262b57b5880646fef66afe88d3);
+            
+        
+
+        marker_96b6a422ab7fc5d94091d40aa717aedd.bindPopup(popup_1c0d2134ac593ae3efa7cf15ed29c58e)
+        ;
+
+        
+    
+    
+            var marker_0d603daa74d832cb31ab3a59ded04011 = L.marker(
+                [35.109489, -103.331729],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_acb92322493c6354ad6ef1319d94ae55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0d603daa74d832cb31ab3a59ded04011.setIcon(icon_acb92322493c6354ad6ef1319d94ae55);
+        
+    
+        var popup_8eb3b388f9f452c37a4192dfe2c2fba1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b1d3d706c9cb8a7a7778fc7911e27ec = $(`<div id="html_2b1d3d706c9cb8a7a7778fc7911e27ec" style="width: 100.0%; height: 100.0%;">Chisum Travel Center San Jon</div>`)[0];
+                popup_8eb3b388f9f452c37a4192dfe2c2fba1.setContent(html_2b1d3d706c9cb8a7a7778fc7911e27ec);
+            
+        
+
+        marker_0d603daa74d832cb31ab3a59ded04011.bindPopup(popup_8eb3b388f9f452c37a4192dfe2c2fba1)
+        ;
+
+        
+    
+    
+            var marker_c46d49b49906d0ec4b5d9801e43cea20 = L.marker(
+                [34.4725898, -104.2483246],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_393c124f937eea1b51d4a62352c81172 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c46d49b49906d0ec4b5d9801e43cea20.setIcon(icon_393c124f937eea1b51d4a62352c81172);
+        
+    
+        var popup_fda39817e762c5d95160b04ea4cb01c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02bec09fe3fb474fd908886f88e5a9ee = $(`<div id="html_02bec09fe3fb474fd908886f88e5a9ee" style="width: 100.0%; height: 100.0%;">Allsups - Ft Sumner</div>`)[0];
+                popup_fda39817e762c5d95160b04ea4cb01c7.setContent(html_02bec09fe3fb474fd908886f88e5a9ee);
+            
+        
+
+        marker_c46d49b49906d0ec4b5d9801e43cea20.bindPopup(popup_fda39817e762c5d95160b04ea4cb01c7)
+        ;
+
+        
+    
+    
+            var marker_adc2916720652f5fd9d44f30acb4de66 = L.marker(
+                [34.4725898, -104.2483246],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_ec044bba5205d6d6d0d2433aa03492da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_adc2916720652f5fd9d44f30acb4de66.setIcon(icon_ec044bba5205d6d6d0d2433aa03492da);
+        
+    
+        var popup_01213c4760b4491b5d91b6e79fcc7b04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b205c14a5df2ae3e973079f1c6922e3 = $(`<div id="html_5b205c14a5df2ae3e973079f1c6922e3" style="width: 100.0%; height: 100.0%;">Allsups - Ft Sumner</div>`)[0];
+                popup_01213c4760b4491b5d91b6e79fcc7b04.setContent(html_5b205c14a5df2ae3e973079f1c6922e3);
+            
+        
+
+        marker_adc2916720652f5fd9d44f30acb4de66.bindPopup(popup_01213c4760b4491b5d91b6e79fcc7b04)
+        ;
+
+        
+    
+    
+            var marker_c3b649cfc2e8416c9047f40325960a8c = L.marker(
+                [34.5998831, -105.1968604],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_e5448c4ac6f76d178f90b2742a68ec22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c3b649cfc2e8416c9047f40325960a8c.setIcon(icon_e5448c4ac6f76d178f90b2742a68ec22);
+        
+    
+        var popup_7f2cc5009001c7d54a60c318f1431010 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dda591423c1222b9fe2feeec161eb75c = $(`<div id="html_dda591423c1222b9fe2feeec161eb75c" style="width: 100.0%; height: 100.0%;">Allsups - Vaughn</div>`)[0];
+                popup_7f2cc5009001c7d54a60c318f1431010.setContent(html_dda591423c1222b9fe2feeec161eb75c);
+            
+        
+
+        marker_c3b649cfc2e8416c9047f40325960a8c.bindPopup(popup_7f2cc5009001c7d54a60c318f1431010)
+        ;
+
+        
+    
+    
+            var marker_f3c3209e5d3f19b906df0c19dc0465b4 = L.marker(
+                [34.5998831, -105.1968604],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_98667c3d8bd8ead58338c27645593ac2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f3c3209e5d3f19b906df0c19dc0465b4.setIcon(icon_98667c3d8bd8ead58338c27645593ac2);
+        
+    
+        var popup_c90bcc099af1dcb5ad084df619f37bcb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e082e78a0fa4c6379ccd50801453789 = $(`<div id="html_4e082e78a0fa4c6379ccd50801453789" style="width: 100.0%; height: 100.0%;">Allsups - Vaughn</div>`)[0];
+                popup_c90bcc099af1dcb5ad084df619f37bcb.setContent(html_4e082e78a0fa4c6379ccd50801453789);
+            
+        
+
+        marker_f3c3209e5d3f19b906df0c19dc0465b4.bindPopup(popup_c90bcc099af1dcb5ad084df619f37bcb)
+        ;
+
+        
+    
+    
+            var marker_066d614ced9fa6c52e337eaab7628f99 = L.marker(
+                [33.641799, -105.875816],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_b32907dc6efa71a7a4d6048f0a019f85 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_066d614ced9fa6c52e337eaab7628f99.setIcon(icon_b32907dc6efa71a7a4d6048f0a019f85);
+        
+    
+        var popup_e082b946339fd905ddcd7448714ac69b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_871c55a4d1517795672253df370da87d = $(`<div id="html_871c55a4d1517795672253df370da87d" style="width: 100.0%; height: 100.0%;">Allsups - Carrizozo</div>`)[0];
+                popup_e082b946339fd905ddcd7448714ac69b.setContent(html_871c55a4d1517795672253df370da87d);
+            
+        
+
+        marker_066d614ced9fa6c52e337eaab7628f99.bindPopup(popup_e082b946339fd905ddcd7448714ac69b)
+        ;
+
+        
+    
+    
+            var marker_b3210d5343573a693d6be627c1bd0056 = L.marker(
+                [33.641799, -105.875816],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_7d8421963a5864f61aa31cb300839ac1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b3210d5343573a693d6be627c1bd0056.setIcon(icon_7d8421963a5864f61aa31cb300839ac1);
+        
+    
+        var popup_5d93db56542f115a03fdb0a3667ea63f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_591509cfe7fa148ae5a6e542d37789df = $(`<div id="html_591509cfe7fa148ae5a6e542d37789df" style="width: 100.0%; height: 100.0%;">Allsups - Carrizozo</div>`)[0];
+                popup_5d93db56542f115a03fdb0a3667ea63f.setContent(html_591509cfe7fa148ae5a6e542d37789df);
+            
+        
+
+        marker_b3210d5343573a693d6be627c1bd0056.bindPopup(popup_5d93db56542f115a03fdb0a3667ea63f)
+        ;
+
+        
+    
+    
+            var marker_9e0afa2407199db32747f19b7495869a = L.marker(
+                [32.8675588, -105.9779832],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_dce0b32c5207f25e88aac8010f9a6f1b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9e0afa2407199db32747f19b7495869a.setIcon(icon_dce0b32c5207f25e88aac8010f9a6f1b);
+        
+    
+        var popup_98ac98e3dbc3d8592014b94949982eb1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f2f1f3307dd5724f9836198230e03d9 = $(`<div id="html_5f2f1f3307dd5724f9836198230e03d9" style="width: 100.0%; height: 100.0%;">Allsups - Alamogordo</div>`)[0];
+                popup_98ac98e3dbc3d8592014b94949982eb1.setContent(html_5f2f1f3307dd5724f9836198230e03d9);
+            
+        
+
+        marker_9e0afa2407199db32747f19b7495869a.bindPopup(popup_98ac98e3dbc3d8592014b94949982eb1)
+        ;
+
+        
+    
+    
+            var marker_184ec3093a6dab3cdb92e50b8501aa04 = L.marker(
+                [32.8675588, -105.9779832],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_5ee0db222d3cc076faa694d640fd9fe4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_184ec3093a6dab3cdb92e50b8501aa04.setIcon(icon_5ee0db222d3cc076faa694d640fd9fe4);
+        
+    
+        var popup_428b99d4584a25372110f14a4e3cd4d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_212d7440024e836018b31f1e3583abaf = $(`<div id="html_212d7440024e836018b31f1e3583abaf" style="width: 100.0%; height: 100.0%;">Allsups - Alamogordo</div>`)[0];
+                popup_428b99d4584a25372110f14a4e3cd4d9.setContent(html_212d7440024e836018b31f1e3583abaf);
+            
+        
+
+        marker_184ec3093a6dab3cdb92e50b8501aa04.bindPopup(popup_428b99d4584a25372110f14a4e3cd4d9)
+        ;
+
+        
+    
+    
+            var marker_29ee4cb13a0d75a6b060016a5dc8da36 = L.marker(
+                [33.3945522, -104.5587217],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_4de05ffc8f4ee20bf897c668ee891289 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_29ee4cb13a0d75a6b060016a5dc8da36.setIcon(icon_4de05ffc8f4ee20bf897c668ee891289);
+        
+    
+        var popup_737558b3d8ed361222662ff9f4743c76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0442468b61a92f4a5052e48d1b20c3d4 = $(`<div id="html_0442468b61a92f4a5052e48d1b20c3d4" style="width: 100.0%; height: 100.0%;">Allsups - Roswell #102160</div>`)[0];
+                popup_737558b3d8ed361222662ff9f4743c76.setContent(html_0442468b61a92f4a5052e48d1b20c3d4);
+            
+        
+
+        marker_29ee4cb13a0d75a6b060016a5dc8da36.bindPopup(popup_737558b3d8ed361222662ff9f4743c76)
+        ;
+
+        
+    
+    
+            var marker_3d6a2c18c1b75bf565ce9d3c8b5f3f89 = L.marker(
+                [33.3945522, -104.5587217],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_0bcaf4043edd224a4f18808ffcf82971 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3d6a2c18c1b75bf565ce9d3c8b5f3f89.setIcon(icon_0bcaf4043edd224a4f18808ffcf82971);
+        
+    
+        var popup_a43192f157375b40126d9530a6e116e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f681b57b96869e0e0fb9d22d5a662a53 = $(`<div id="html_f681b57b96869e0e0fb9d22d5a662a53" style="width: 100.0%; height: 100.0%;">Allsups - Roswell #102160</div>`)[0];
+                popup_a43192f157375b40126d9530a6e116e7.setContent(html_f681b57b96869e0e0fb9d22d5a662a53);
+            
+        
+
+        marker_3d6a2c18c1b75bf565ce9d3c8b5f3f89.bindPopup(popup_a43192f157375b40126d9530a6e116e7)
+        ;
+
+        
+    
+    
+            var marker_cc8c2fe110ded0ac1c8e2b69f3acb1ce = L.marker(
+                [33.2140672, -107.2255348],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_494ba5324f0d31474b186f12648945cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cc8c2fe110ded0ac1c8e2b69f3acb1ce.setIcon(icon_494ba5324f0d31474b186f12648945cd);
+        
+    
+        var popup_9aec89632fc4f17bd1b0745b79e8a907 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_df9e1cd8584255d47324e34a554bde40 = $(`<div id="html_df9e1cd8584255d47324e34a554bde40" style="width: 100.0%; height: 100.0%;">Fast Stop Elephant Butte</div>`)[0];
+                popup_9aec89632fc4f17bd1b0745b79e8a907.setContent(html_df9e1cd8584255d47324e34a554bde40);
+            
+        
+
+        marker_cc8c2fe110ded0ac1c8e2b69f3acb1ce.bindPopup(popup_9aec89632fc4f17bd1b0745b79e8a907)
+        ;
+
+        
+    
+    
+            var marker_d40c46c2dd254b09a91f336052e9afb7 = L.marker(
+                [33.2140672, -107.2255348],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_a9ba89c683718b10814169e20fdc07e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d40c46c2dd254b09a91f336052e9afb7.setIcon(icon_a9ba89c683718b10814169e20fdc07e2);
+        
+    
+        var popup_b892586fcb29a85effdbea3aa5f693b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e80920e9b0625004f5e5a176f89076d4 = $(`<div id="html_e80920e9b0625004f5e5a176f89076d4" style="width: 100.0%; height: 100.0%;">Fast Stop Elephant Butte</div>`)[0];
+                popup_b892586fcb29a85effdbea3aa5f693b5.setContent(html_e80920e9b0625004f5e5a176f89076d4);
+            
+        
+
+        marker_d40c46c2dd254b09a91f336052e9afb7.bindPopup(popup_b892586fcb29a85effdbea3aa5f693b5)
+        ;
+
+        
+    
+    
+            var marker_f4c352aaa6a71d71eb86de1a0d630760 = L.marker(
+                [32.730261, -103.1500365],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_475b6468d847e58ff364936e7cc29cda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f4c352aaa6a71d71eb86de1a0d630760.setIcon(icon_475b6468d847e58ff364936e7cc29cda);
+        
+    
+        var popup_9fd62ec509b8ae16431093f226fe4d40 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2366168664e60b6d35ec01c39be3e859 = $(`<div id="html_2366168664e60b6d35ec01c39be3e859" style="width: 100.0%; height: 100.0%;">Allsups - Hobbs</div>`)[0];
+                popup_9fd62ec509b8ae16431093f226fe4d40.setContent(html_2366168664e60b6d35ec01c39be3e859);
+            
+        
+
+        marker_f4c352aaa6a71d71eb86de1a0d630760.bindPopup(popup_9fd62ec509b8ae16431093f226fe4d40)
+        ;
+
+        
+    
+    
+            var marker_822d2fbf6054a9ff52cbb669722f2505 = L.marker(
+                [32.730261, -103.1500365],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_46e95e00d534f618401fb7b347c9bba2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_822d2fbf6054a9ff52cbb669722f2505.setIcon(icon_46e95e00d534f618401fb7b347c9bba2);
+        
+    
+        var popup_f64623a5d08702a592fd532ac1148ecf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e289a11eb80f4cfc7a79137f132776c = $(`<div id="html_4e289a11eb80f4cfc7a79137f132776c" style="width: 100.0%; height: 100.0%;">Allsups - Hobbs</div>`)[0];
+                popup_f64623a5d08702a592fd532ac1148ecf.setContent(html_4e289a11eb80f4cfc7a79137f132776c);
+            
+        
+
+        marker_822d2fbf6054a9ff52cbb669722f2505.bindPopup(popup_f64623a5d08702a592fd532ac1148ecf)
+        ;
+
+        
+    
+    
+            var marker_1a9682bbdb3fee431b9b33f610c13a3a = L.marker(
+                [35.155072, -103.724766],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_374611694a9c067f7e88d7d7ca687147 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1a9682bbdb3fee431b9b33f610c13a3a.setIcon(icon_374611694a9c067f7e88d7d7ca687147);
+        
+    
+        var popup_dcd0fa212bc9bb46ba41dfdd431bc271 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7ab8f7e99bdca4bfb4229c30ba6ee26e = $(`<div id="html_7ab8f7e99bdca4bfb4229c30ba6ee26e" style="width: 100.0%; height: 100.0%;">Allsups - Tucumcari</div>`)[0];
+                popup_dcd0fa212bc9bb46ba41dfdd431bc271.setContent(html_7ab8f7e99bdca4bfb4229c30ba6ee26e);
+            
+        
+
+        marker_1a9682bbdb3fee431b9b33f610c13a3a.bindPopup(popup_dcd0fa212bc9bb46ba41dfdd431bc271)
+        ;
+
+        
+    
+    
+            var marker_11cccb4b8012d600b3b460abbafc4b46 = L.marker(
+                [35.155072, -103.724766],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_aa23d166e14962902cff6cc51a3db267 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_11cccb4b8012d600b3b460abbafc4b46.setIcon(icon_aa23d166e14962902cff6cc51a3db267);
+        
+    
+        var popup_233a11c6403c3381234dc9371976b500 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_579f230390b97eb8c6a3ffeb54b57008 = $(`<div id="html_579f230390b97eb8c6a3ffeb54b57008" style="width: 100.0%; height: 100.0%;">Allsups - Tucumcari</div>`)[0];
+                popup_233a11c6403c3381234dc9371976b500.setContent(html_579f230390b97eb8c6a3ffeb54b57008);
+            
+        
+
+        marker_11cccb4b8012d600b3b460abbafc4b46.bindPopup(popup_233a11c6403c3381234dc9371976b500)
+        ;
+
+        
+    
+    
+            var marker_10b8b87b0448f7545ec1c2295393a61d = L.marker(
+                [32.857366, -104.399102],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_96a71414a4d2695c24b2bfc464a698ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_10b8b87b0448f7545ec1c2295393a61d.setIcon(icon_96a71414a4d2695c24b2bfc464a698ea);
+        
+    
+        var popup_e3be1eda3f802d583e1039c1027d93c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15bb596da86bfd7c649d24007b1e85a5 = $(`<div id="html_15bb596da86bfd7c649d24007b1e85a5" style="width: 100.0%; height: 100.0%;">Allsups - Artesia</div>`)[0];
+                popup_e3be1eda3f802d583e1039c1027d93c7.setContent(html_15bb596da86bfd7c649d24007b1e85a5);
+            
+        
+
+        marker_10b8b87b0448f7545ec1c2295393a61d.bindPopup(popup_e3be1eda3f802d583e1039c1027d93c7)
+        ;
+
+        
+    
+    
+            var marker_8b1110491c85cda78f567bf35d6be944 = L.marker(
+                [32.857366, -104.399102],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_ac34e6a53db9200e40893a9360221d71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8b1110491c85cda78f567bf35d6be944.setIcon(icon_ac34e6a53db9200e40893a9360221d71);
+        
+    
+        var popup_f031927a70afa8105a504677f3e26e94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e34bc198ec1fdef90d30eb681ee7bc02 = $(`<div id="html_e34bc198ec1fdef90d30eb681ee7bc02" style="width: 100.0%; height: 100.0%;">Allsups - Artesia</div>`)[0];
+                popup_f031927a70afa8105a504677f3e26e94.setContent(html_e34bc198ec1fdef90d30eb681ee7bc02);
+            
+        
+
+        marker_8b1110491c85cda78f567bf35d6be944.bindPopup(popup_f031927a70afa8105a504677f3e26e94)
+        ;
+
+        
+    
+    
+            var marker_8b2d589692863b5c0be5c447a0112086 = L.marker(
+                [35.0112, -105.67413],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_42803b93ae0af190df5c3dc39deefac4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8b2d589692863b5c0be5c447a0112086.setIcon(icon_42803b93ae0af190df5c3dc39deefac4);
+        
+    
+        var popup_4d90c9b23619ab0bc83ec638700acc64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3e248d4fdecaac2a4c539cda03ed7c22 = $(`<div id="html_3e248d4fdecaac2a4c539cda03ed7c22" style="width: 100.0%; height: 100.0%;">Clines Corners Travel Center</div>`)[0];
+                popup_4d90c9b23619ab0bc83ec638700acc64.setContent(html_3e248d4fdecaac2a4c539cda03ed7c22);
+            
+        
+
+        marker_8b2d589692863b5c0be5c447a0112086.bindPopup(popup_4d90c9b23619ab0bc83ec638700acc64)
+        ;
+
+        
+    
+    
+            var marker_01a815dd8c592ee7717650e13a5c5464 = L.marker(
+                [35.0112, -105.67413],
+                {}
+            ).addTo(map_e68a27b906f9303b3a903332b307461c);
+        
+    
+            var icon_bb87fa6859a359852c2b0eab17fd5235 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_01a815dd8c592ee7717650e13a5c5464.setIcon(icon_bb87fa6859a359852c2b0eab17fd5235);
+        
+    
+        var popup_6c5eeceb322a756fef37edfbab644139 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_041e6aab890612fd711076c83ce86007 = $(`<div id="html_041e6aab890612fd711076c83ce86007" style="width: 100.0%; height: 100.0%;">Clines Corners Travel Center</div>`)[0];
+                popup_6c5eeceb322a756fef37edfbab644139.setContent(html_041e6aab890612fd711076c83ce86007);
+            
+        
+
+        marker_01a815dd8c592ee7717650e13a5c5464.bindPopup(popup_6c5eeceb322a756fef37edfbab644139)
+        ;
+
+        
+    
+</script>
+</html>
